@@ -1,0 +1,163 @@
+*, *::before, *::after {
+    margin: 0 auto;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: Calibri light;
+    font-size: 82.5%;
+}
+
+#navbar {
+    padding: auto;
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    background-color: black;    
+}
+
+.nav-link {
+    display: block;
+    font-size: 150%;
+    text-transform: uppercase;
+    color:dimgrey;
+    text-decoration: none;
+    padding: 5px;
+    border: 1px solid transparent;
+}
+
+.nav-link:hover{
+    font-weight: bold;
+    border-color: dimgray;
+}
+
+section {
+    min-height: 100vh;
+    text-align: center;
+}
+
+#welcome-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: dimgrey;
+}
+
+#title{
+    font-size: 350%;
+    padding: 1rem
+}
+
+#subtitle {
+    font-size: 150%;
+}
+
+h3 {
+    font-size: 150%;
+    text-transform: uppercase;
+    padding: 2rem;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    color: dimgray;
+    padding: 2rem 
+}
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color:dimgray;     
+}
+
+::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+#projects {
+    background-color: black;
+    color: lightgrey;
+}
+
+#projects-container {
+    padding-bottom: 2rem ;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.project-tile {
+    border: 2px solid lightgrey;
+    padding: 0.25rem;
+}
+
+.project-link {
+    color: lightgray;
+    font-size: 125%;
+    font-weight: light;
+    text-decoration: none;
+    padding: 0.125rem auto;
+}
+
+.project-tile:hover {
+    background-color: dimgray;
+    border: 2px double black;
+}
+
+.project-link:hover {
+    background-color: dimgray;
+}
+
+iframe {
+    border: none;
+    width: 300px;
+    height: 75px;    
+}
+
+@media (max-width: 550px) {
+    iframe {
+        width: 175px;
+    }
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: dimgray;
+}
+
+#contact-links {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.contact-link {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+footer {
+    padding: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+}
